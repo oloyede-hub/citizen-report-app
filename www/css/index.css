@@ -1,0 +1,169 @@
+body {
+	font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI",
+		"Roboto", sans-serif;
+	font-size: 12px;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width: 400px) {
+	.app {
+		background-position: left center;
+		padding: 75px 0px 75px 170px; /* padding-top + padding-bottom + text area = image height */
+		margin: -90px 0px 0px -198px; /* offset vertical: half of image height */
+		/* offset horizontal: half of image width and text area width */
+	}
+}
+
+/* h1 {
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0px;
+	overflow: visible;
+	padding: 0px;
+	text-align: center;
+} */
+.app-content {
+	padding-left: 20px;
+    padding-right: 20px;
+	
+}
+/* .form-style-2{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+} */
+.app-title {
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	padding-bottom: 3px;
+	padding: 20px;
+	text-align: center;
+	background: #1abc9c;
+	color: white;
+	font-size: 20px;
+}
+label {
+    padding-top: 10px;
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+label > span {
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+span.required {
+	color: red;
+}
+
+input,
+select,textarea {
+	width: 100%;
+}
+input,textarea , select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: 'Courier New', Courier, monospace;
+	border: 1px solid #c2c2c2;
+	box-shadow: 1px 1px 4px #ebebeb;
+	-moz-box-shadow: 1px 1px 4px #ebebeb;
+	-webkit-box-shadow: 1px 1px 4px #ebebeb;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+
+#location_input, #image {
+	width:100px;
+	background-color: #1abc9c;
+	padding:5px;
+}
+.lat_log {
+width: 50%;
+color: whitesmoke;
+background-color: gray;
+}
+
+.location_input {
+	display: flex;
+	padding-top: 10px;
+	flex-direction: row;
+}
+
+textarea:focus,
+input:focus {
+	border: 1px solid #0c0;
+}
+textarea {
+	height: 100px;
+	width: 100%;
+}
+button {
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 50%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.location {
+
+}
+button:hover {
+	background: #928d87;
+	color: #fff;
+}
+h3,h2 {
+  font-size: 30px;  
+  text-decoration: underline;
+  text-align: center;
+}
+h2 {
+    text-decoration: none;
+}
+
+
+#mainDiv{
+    padding:10px;
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    padding-left:10px;
+    padding-right:10px;
+    width: 80%;
+    height: 150px;
+    background-color: #2FBC9D;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background-image: linear-gradient(to bottom, #585858 0%, #1b1b1b 51%);
+	}
+}

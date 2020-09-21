@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- <link rel="stylesheet" href="css/app.min.css"> -->
+        <title>Hello World</title>
+    </head>
+    <body>
+          <div class="app-page" data-page="send-a-post">
+            <div class="app-topbar">
+              <div class="app-title">Citizen Report App</div>
+            </div>
+            <div class="app-content">
+
+              
+              <div class="container">
+                <h2>Create an Awareness by submitting a report</h2>
+                <form class="was-validated">
+                  <div class="form-group">
+                    <label for="problemType">Your Full Name:</label>
+                    <input
+                      type="text"
+                      class="formcontrol"
+                      id="fullname"
+                      placeholder="e.g Oluwa Burna"
+                      name="fullname"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="problemType">Select a Category</label>
+                    <select name="categories" id="categories" class="categories">
+                        <option value="fighting"> Fighting</option>
+                        <option value="accident"> Accident</option>
+                        <option value="rioting"> Rioting</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="date">Date submitted:</label>
+                    <input
+                      type="date"
+                      class="formcontrol"
+                      id="date"
+                      placeholder="e.g 21-3-2020."
+                      name="date"
+                      required
+                    />
+                  </div>    
+                  <div class="form-group location_input">
+                    <label >Report Location:</label>
+                    <input type="button" id="location_input" value="Location" />
+                    <span id="lat_log" class="lat_log">
+                      
+                    </span>
+                  </div>                 
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input
+                      type="text"
+                      class="formcontrol"
+                      id="title"
+                      placeholder="Accident at Lagos Ibadan Expressway"
+                      name="title"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="title">Eye witness Image:</label>
+                    <input name="image-input" id="image-input" type="file">
+                    <input type="button" id="image"  value="TakePhoto" />
+                    <p id="msg"></p>
+
+                  </div>
+                  <div class="form-group">
+
+                    <label for="content">Report detail:</label>
+                    <textarea
+                      name="content"
+                      id="content"
+                      cols="30"
+                      rows="3"
+                      class="form-control"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+              </div>
+              <div class="recent-post-header">
+                <h3>Recent Posts...</h3>  
+                </div>
+              
+              
+            </div>
+          </div>
+          <div class="d-flex justify-content-center pt-2" id="spinner">
+            <div class="spinner-border text-primary"></div>
+          </div>
+          <div class="container pt-2" id="mainDiv">
+            <!-- <div class="all_post" id="allPost"></div>
+            <div class="fireOutbreak" id="fireOutbreak"></div>
+            <div class="accident" id="accident"></div>  
+            <div class="rioting" id="rioting"></div> -->
+          </div>
+          <script src="cordova.js"></script>
+          <script src="js/jquery.js"></script>
+          <script src="js/app.min.js"></script>
+          <script src="js/index.js"></script>
+    </body>
+</html>
